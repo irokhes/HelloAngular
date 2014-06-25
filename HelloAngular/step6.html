@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Hello Angular, step 6</title>
+</head>
+<body ng-app="myAppStep6">
+    <h3>Questionnaire</h3>
+    <script type="text/ng-template" id="questionnaire">
+        <div class="question">
+            <span>{{question.number}}</span>&nbsp.
+            <span>{{question.question}}</span> -&nbsp.
+            <span>{{question.type}}</span>&nbsp.
+        </div>
+    </script>
+    <div ng-controller="QuestionnarieCtrl">
+        <div ng-repeat="question in questionnaire" ng-include="'questionnaire'"></div>
+    </div>
+
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/step6.js"></script>
+</body>
+</html>
