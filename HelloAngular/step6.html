@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Hello Angular, step 6</title>
+    <link href="Content/app.css" rel="stylesheet" />
 </head>
 <body ng-app="myAppStep6">
     <h3>Questionnaire</h3>
@@ -12,7 +13,7 @@
             <span>{{question.type}}</span>&nbsp.
         </div>
     </script>
-    <div ng-controller="QuestionnarieCtrl">
+    <div ng-controller="QuestionnaireCtrl">
         <div ng-repeat="question in questionnaire" ng-include="'questionnaire'"></div>
     </div>
 

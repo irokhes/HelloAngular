@@ -9,5 +9,6 @@ app.controller('QuestionnaireCtrl', function ($scope) {
         { number: 1, question: "Which is your favorite colour?", type: "singleOption" },
         { number: 1, question: "Which of the following sweets do you like?", type: "multiOption" }
     ];
+
+    $scope.number = 3;
 });
- 
