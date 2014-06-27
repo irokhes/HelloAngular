@@ -3,3 +3,9 @@
     padding: 10px;
     margin-bottom: 10px;
 }
+
+.answer{
+    border: 1px solid lightgray;
+    padding: 5px;
+    background: linear-gradient(lightgray, gray);
+}

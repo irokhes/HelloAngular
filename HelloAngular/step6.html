@@ -11,6 +11,7 @@
             <span>{{question.number}}</span>&nbsp.
             <span>{{question.question}}</span> -&nbsp.
             <span>{{question.type}}</span>&nbsp.
+            <div class="answer" ng-include="'templates/'+ question.type + '.html'"></div>
         </div>
     </script>
     <div ng-controller="QuestionnaireCtrl">
